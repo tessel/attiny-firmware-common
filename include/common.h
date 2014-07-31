@@ -1,4 +1,8 @@
 #include <avr/eeprom.h>
+#include <avr/pgmspace.h> // Used for getting the CRC
+
+// For CRC calculation
+#define POLY 0x8408
 
 // Calculates the checksum of the flash
 unsigned short calculate_checksum( unsigned short length);
