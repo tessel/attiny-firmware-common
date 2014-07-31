@@ -24,15 +24,13 @@ unsigned short calculate_checksum( unsigned short length)
   data = crc;
   crc = (crc << 8) | (data >> 8 & 0xff);
 
-  crc = checksum;
-
   return (crc);
 }
 
 uint8_t read_module_id() {
-
+  return 8;
 }
 
 uint8_t read_firmware_version() {
-  
+  return 2;
 }
