@@ -28,7 +28,7 @@ unsigned short calculate_checksum( unsigned short length)
 }
 
 uint8_t read_module_id() {
-  return eeprom_read_byte(MODULE_ID_ADDRESS) 
+  return eeprom_read_byte(MODULE_ID_ADDRESS);
 }
 
 uint8_t read_firmware_version() {
